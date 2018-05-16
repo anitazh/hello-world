@@ -1,0 +1,84 @@
+*{
+	box-sizing: border-box;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+.gradtop{
+	background:#f090f9;
+	background:linear-gradient(to bottom, #f090f9, #df86e8);
+}
+.grad{
+	background:#df86e8;
+	background:linear-gradient(to bottom, #df86e8, #726fd6);
+}
+.gradbot{
+	background:#726fd6;
+	background:linear-gradient(to bottom, #726fd6, #5e68ba);
+}
+.header{
+}
+.inner-header{
+	height:200px;
+}
+.content{
+	width:70%;
+	float:left;
+	
+}
+.inner-content{
+	min-height:500px;
+}
+
+.sidebar{
+	width:30%;
+	float:left;
+	
+}
+.inner-sidebar{
+	min-height:500px;
+    margin-top:-16px;
+	
+}
+
+.menu{
+	padding:20%;
+	list-style:none;
+	text-decoration:none;
+	min-height:500px;
+	/*box-shadow: -18px 0 20px -20px #333,
+				 18px 0 20px -20px #333; /*7px 7px 5px rgba(0, 0, 0, 0.4);
+	border-radius:8px;*/
+}
+.menu a{
+	display:block;
+	padding:10px 10px;
+	text-decoration:none;
+	color:#ebdbff;
+	font-size:20px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+
+
+.menu a:hover{
+	background:#f090f9;
+	box-shadow:3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+.footer{
+}
+.inner-footer{
+	height:200px;
+	margin-top:-16px;
+}
